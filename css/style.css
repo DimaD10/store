@@ -1244,6 +1244,9 @@ button, a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
   height: 100%;
 }
 @media (max-width: 991.98px) {
