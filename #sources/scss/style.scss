@@ -301,7 +301,6 @@
         .swiper-button-prev, .swiper-button-next {
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
             background-color: transparent;
 
             width: 44px;
@@ -627,9 +626,6 @@
         }
     }
 }
-
-
-
 
 
 .footer {

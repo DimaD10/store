@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/product-page.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="header__container">
+                    <a href="index.html" class="header__logo">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <div class="header__search site-search">
+                        <input type="text" class="site-search__input" placeholder="Поиск" id="global-search">
+                        <button class="site-search__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L20.5 19L19 20.5L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z" fill="#0A0A0A"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="header__nav header-menu header-menu_top">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Новости</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">О нас</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Помощь</a></li>
+                    </ul>
+                    <div class="header__user-opt user-opt">
+                        <button class="user-opt__button button-stroke">Войти</button>
+                        <button class="user-opt__button button-filled">Регистрация</button>
+                    </div>
+
+                    <button class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header__container">
+                    <div class="header__search site-search">
+                        <input type="text" class="site-search__input" placeholder="Поиск" id="global-search-second">
+                        <button class="site-search__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L20.5 19L19 20.5L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z" fill="#0A0A0A"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="header__menu header-menu header-menu_bottom">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Кроссовки</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Обувь</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Одежда</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Акссесуары</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Мужское</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Женское</a></li>
+                    </ul>
+
+                    <ul class="header__nav header-menu header-menu_top">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Новости</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">О нас</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__breadcrumbs breadcrumbs">
+                <div class="breadcrumbs__container-small">
+                    <div class="breadcrumbs__line">
+                        <a href="index.html" class="breadcrumbs__el">Главная</a>
+                        <a href="#" class="breadcrumbs__el">Кроссовки </a>
+                        <a href="#" class="breadcrumbs__el">Air Jordan</a>
+                        <a href="#" class="breadcrumbs__el breadcrumbs__el_current">Jordan 4 Retro Thunder (2023)</a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="main__product product">
+                <div class="product__container-small">
+                    <div class="product__header">
+                        <h2 class="product__title">Jordan 4 Retro</h2>
+                        <span class="product__subtitle">Thunder (2023)</span>
+                    </div>
+                    <div class="product__body body-prod">
+                        <div class="body-prod__slider">
+                            <div class="slider-product">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/prod-slider/img1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/prod-slider/img2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/prod-slider/img3.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/prod-slider/img4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./img/prod-slider/img1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/prod-slider/img2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/prod-slider/img3.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/prod-slider/img4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="body-prod__info prod-info">
+                            <div class="prod-info__status">2383 Продано за Последние 3 Дня!</div>
+
+                            <div class="prod-info__actions">
+                                <div class="prod-info__size select">
+                                    <div class="select__header">
+                                        <span class="select__label">Размер:</span>
+                                        <div class="select__current"></div>
+                                        <div class="select__icon"><img src="./img/icons/chevron-down.svg" alt=""></div>
+                                    </div>
+                                    <div class="select__body">
+                                        <div class="select__item">36</div>
+                                        <div class="select__item">37</div>
+                                        <div class="select__item">38</div>
+                                        <div class="select__item">39</div>
+                                        <div class="select__item">40</div>
+                                        <div class="select__item">41</div>
+                                        <div class="select__item">42</div>
+                                        <div class="select__item">43</div>
+                                        <div class="select__item">44</div>
+                                        <div class="select__item">45</div>
+                                        <div class="select__item">46</div>
+                                    </div>
+                                </div>
+
+                                <div class="prod-info__buttons">
+                                    <button class="prod-info__button button-stroke">
+                                        В избранное
+                                    </button>
+                                    <button class="prod-info__button button-orange">
+                                        Купить
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="prod-info__spoilers">
+                                <div class="prod-info__spoiler spoiler">
+                                    <div class="spoiler__header">
+                                        <div class="spoiler__icon">
+                                            <img src="./img/icons/check.svg" alt="">
+                                        </div>
+                                        <h3 class="spoiler__title">C-moon Verified</h3>
+
+                                        <span class="spoiler__status status">Состояние: <span class="status__status">Новый</span></span>
+
+                                        <div class="spoiler__decor">
+                                            <img src="./img/icons/chevron-down.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="spoiler__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusantium necessitatibus similique?</div>
+                                </div>
+                                <div class="prod-info__spoiler spoiler">
+                                    <div class="spoiler__header">
+                                        <div class="spoiler__icon">
+                                            <img src="./img/icons/heart-circle-outline.svg" alt="">
+                                        </div>
+                                        <h3 class="spoiler__title">Наше обещание</h3>
+
+                                        <div class="spoiler__decor">
+                                            <img src="./img/icons/chevron-down.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="spoiler__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusantium necessitatibus similique?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product__descr descr-prod">
+                        <div class="descr-prod__column descr-prod__column_details">
+                            <h3 class="descr-prod__title">Детали продукта</h3>
+                            <div class="descr-prod__body">
+                                <div class="descr-prod__row-descr">
+                                    <span class="descr-prod__label">SKU</span>
+                                    <span class="descr-prod__value">DH6927-017</span>
+                                </div>
+                                <div class="descr-prod__row-descr">
+                                    <span class="descr-prod__label">Цвет</span>
+                                    <span class="descr-prod__value">BLACK/TOUR YELLOW</span>
+                                </div>
+                                <div class="descr-prod__row-descr">
+                                    <span class="descr-prod__label">Розничная цена</span>
+                                    <span class="descr-prod__value">10 999 ₽</span>
+                                </div>
+                                <div class="descr-prod__row-descr">
+                                    <span class="descr-prod__label">Дата релиза</span>
+                                    <span class="descr-prod__value">05/13/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="descr-prod__column descr-prod__column_description">
+                            <h3 class="descr-prod__title">Описание продукта</h3>
+                            <div class="descr-prod__body">
+                                <p class="descr-prod__paragraph">Впервые более чем за десятилетие Air Jordan 4 Retro Thunder возвращается и будет представлен в рамках кампании бренда Jordan Весна/Лето 2023.</p>
+                                <p class="descr-prod__paragraph">Бренд Jordan вернул этот любимый поклонниками colorway, выполненный с использованием высококачественного черного верха из нубука с вкраплениями желтого цвета по всей подошве, кружевным люверсам и язычку. Культовый логотип Jumpman Майкла Джордана размещен на заднике, язычке и стельках кроссовок.</p>
+                                <p class="descr-prod__paragraph">Air Jordan 4 Retro Thunder (2023) выпущен 13 мая 2023 года по розничной цене 210 долларов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__recomendation recomendation">
+                <div class="recomendation__container-small">
+                    <h2 class="recomendation__title title">Вам также может понравится</h2>
+                    <div class="recomendation__list">
+                        <div class="recomendation__list-wrapper rec-slider">
+                            <div class="swiper-wrapper">
+                                <a href="product-page.html" class="swiper-slide product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+    
+                                <a href="product-page.html" class="swiper-slide product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+    
+                                <a href="product-page.html" class="swiper-slide product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+    
+                                <a href="product-page.html" class="swiper-slide product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+    
+                                <a href="product-page.html" class="swiper-slide product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+    
+                                <a href="product-page.html" class="swiper-slide product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+
+                                <a href="product-page.html" class="swiper-slide product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+    
+                                <a href="product-page.html" class="swiper-slide product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+                            </div>
+    
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-body">
+                <div class="footer__container">
+                    <div class="footer-body__nav">
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Air Jordan</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 1 Mid</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 5</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 6</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 11</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan Даты Выхода</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">New balance</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 327</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 530</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 2002R</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 550</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 574</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New Balance Aimé Leon Dore</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Популярные релизы</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Lightning McQueen Crocs</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">NikeCraft GPS Yellow</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Jordan 2 J Balvin</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">adidas Samba</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Популярные поисковые запросы</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Популярные бренды</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Nike</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Dunk</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Blazer</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Air Force 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские Air Force 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Air</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike SB</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Одежда</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Supreme</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Essentials</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Chrome Hearts</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Vlone</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Tech Fleece</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Yeezy GAP</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Продажа</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Руководство по продаже</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Разработчики</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Женская</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские кроссовки</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женская обувь</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женская одежда</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские аксессуары</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские джорданы</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Аксессуары</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Swatch X Omega Mission</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Supreme Field Waist Bag</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Jordan Monogram Duffle Bag</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Marc Jacobs Tote Mini</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Gucci NY Yankees Cap</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Размерный ряд</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размер обуви в зависимости от бренда</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Руководство по размеру детской обуви</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размеры женской обуви</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размеры мужской обуви</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer__container">
+                    <div class="footer-bottom-nav">
+                        <a href="#" class="footer-bottom-nav__link">помощь</a>
+                        <a href="#" class="footer-bottom-nav__link">как это работает</a>
+                        <a href="#" class="footer-bottom-nav__link">конфиденциальность</a>
+                        <a href="#" class="footer-bottom-nav__link">условия пользования</a>
+                        <a href="#" class="footer-bottom-nav__link">связаться с нами</a>
+                        <a href="#" class="footer-bottom-nav__link">работать с нами</a>
+                    </div>
+                    <span class="footer-bottom__copyright">©2023 C-moon. Все права зарезервированы.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/spoiler.js"></script>
+</body>
+</html>
