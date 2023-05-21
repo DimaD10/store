@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <img src="./img/logo.svg" alt="">
+                    </div>
+                    <div class="header__search site-search">
+                        <input type="text" class="site-search__input" placeholder="Поиск" id="global-search">
+                        <button class="site-search__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L20.5 19L19 20.5L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z" fill="#0A0A0A"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="header__nav header-menu header-menu_top">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Новости</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">О нас</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Помощь</a></li>
+                    </ul>
+                    <div class="header__user-opt user-opt">
+                        <button class="user-opt__button button-stroke">Войти</button>
+                        <button class="user-opt__button button-filled">Регистрация</button>
+                    </div>
+
+                    <button class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header__container">
+                    <div class="header__search site-search">
+                        <input type="text" class="site-search__input" placeholder="Поиск" id="global-search-second">
+                        <button class="site-search__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L20.5 19L19 20.5L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z" fill="#0A0A0A"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="header__menu header-menu header-menu_bottom">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Кроссовки</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Обувь</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Одежда</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Акссесуары</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Мужское</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Женское</a></li>
+                    </ul>
+
+                    <ul class="header__nav header-menu header-menu_top">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Новости</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">О нас</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__presentation presentation">
+                <div class="presentation__container">
+                    <div class="presentation-slider">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide">
+                                <img src="./img/hero-slider/1.png" alt="">
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <img src="./img/hero-slider/2.png" alt="">
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <img src="./img/hero-slider/3.png" alt="">
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <img src="./img/hero-slider/4.png" alt="">
+                            </a>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <button class="swiper-button-prev"></button>
+                        <button class="swiper-button-next"></button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="main__recomendation recomendation">
+                <div class="recomendation__container">
+                    <h2 class="recomendation__title title">Рекомендовано для вас</h2>
+                    <div class="recomendation__list product-list">
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__popular popular">
+                <div class="popular__container">
+                    <div class="popular__header list-header">
+                        <h2 class="popular__title title">Популярные бренды кроссовок</h2>
+                        <a href="#" class="popular__link link-more">
+                            Смотреть все
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#0A0A0A"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popular__list categories-list">
+                        <a href="#" class="category-card" title="Jordan">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img1.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Jordan</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Jordan.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-card" title="New balance">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img2.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">New balance</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/NB.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-card" title="Reebok">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img3.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Reebok</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Reebok.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-card" title="Adidas">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img4.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Adidas</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/adidas.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-card" title="Nike">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img5.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Nike</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Nike.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="main__banners banners">
+                <div class="banners__container">
+                    <div class="banners__list">
+                        <a href="#" class="banners__card">
+                            <img src="./img/banners/img1.png" alt="">
+                        </a>
+                        <a href="#" class="banners__card">
+                            <img src="./img/banners/img2.png" alt="">
+                        </a>
+                        <a href="#" class="banners__card">
+                            <img src="./img/banners/img3.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__posters posters">
+                <div class="posters__container">
+                    <div class="posters__list">
+                        <a href="#" class="posters__card">
+                            <img src="./img/posters/img1.png" alt="">
+                        </a>
+                        <a href="#" class="posters__card">
+                            <img src="./img/posters/img2.png" alt="">
+                        </a>
+                        <a href="#" class="posters__card">
+                            <img src="./img/posters/img3.png" alt="">
+                        </a>
+                        <a href="#" class="posters__card">
+                            <img src="./img/posters/img4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="main__trends trends">
+                <div class="trends__container">
+                    <div class="trends__header list-header">
+                        <h2 class="trends__title title">В тренде</h2>
+                        <a href="#" class="trends__link link-more">
+                            Смотреть все
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#0A0A0A"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="trends__list product-list">
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+
+                        <div class="product-card">
+                            <a href="#" class="product-card__preview">
+                                <img src="./img/product/img1.png" alt="">
+                            </a>
+                            <a href="#" class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</a>
+                            <span class="product-card__price">5 999 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__popular popular">
+                <div class="popular__container">
+                    <div class="popular__header list-header">
+                        <h2 class="popular__title title">Категории</h2>
+                        <a href="#" class="popular__link link-more">
+                            Смотреть все
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#0A0A0A"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="popular__list categories-list">
+                        <a href="#" class="category-card" title="Футболки">
+                            <div class="category-card__preview">
+                                <img src="./img/categories/img1.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Футболки</h3>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-card" title="Худи">
+                            <div class="category-card__preview">
+                                <img src="./img/categories/img2.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Худи</h3>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-card" title="Куртки">
+                            <div class="category-card__preview">
+                                <img src="./img/categories/img3.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Куртки</h3>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-card" title="Обувь">
+                            <div class="category-card__preview">
+                                <img src="./img/categories/img4.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Обувь</h3>
+                            </div>
+                        </a>
+
+                        <a href="#" class="category-card" title="Штаны">
+                            <div class="category-card__preview">
+                                <img src="./img/categories/img5.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Штаны</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__summary summary">
+                <div class="summary__container">
+                    <div class="summary__list">
+                        <div class="card-summary">
+                            <div class="card-summary__header">
+                                <div class="card-summary__icon">
+                                    <img src="./img/icons/check.svg" alt="">
+                                </div>
+                                <h3 class="card-summary__title">C-moon Verified</h3>
+                            </div>
+                            <div class="card-summary__body">
+                                <p class="card-summary__paragraph">C-moon Verified -  это наше собственное обозначение, означающее, что мы проверяем каждый товар на подлинность.</p>
+                                <a href="#" class="card-summary__more">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="card-summary">
+                            <div class="card-summary__header">
+                                <div class="card-summary__icon">
+                                    <img src="./img/icons/heart-circle-outline.svg" alt="">
+                                </div>
+                                <h3 class="card-summary__title">Наше обещание</h3>
+                            </div>
+                            <div class="card-summary__body">
+                                <p class="card-summary__paragraph">Мы стремимся заслужить и сохранить ваше доверие. Если мы совершим ошибку, мы все исправим.</p>
+                                <a href="#" class="card-summary__more">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="card-summary">
+                            <div class="card-summary__header">
+                                <div class="card-summary__icon">
+                                    <img src="./img/icons/cash-multiple.svg" alt="">
+                                </div>
+                                <h3 class="card-summary__title">Начните продавать как можно скорее</h3>
+                            </div>
+                            <div class="card-summary__body">
+                                <p class="card-summary__paragraph">Вы можете начать продажи на складе всего за несколько кликов, при этом процесс подачи заявки не требуется.</p>
+                                <a href="#" class="card-summary__more">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="card-summary">
+                            <div class="card-summary__header">
+                                <div class="card-summary__icon">
+                                    <img src="./img/icons/truck-delivery.svg" alt="">
+                                </div>
+                                <h3 class="card-summary__title">Бесплатная доставка и возврат товара</h3>
+                            </div>
+                            <div class="card-summary__body">
+                                <p class="card-summary__paragraph">Каждый товар доставляется бесплатно</p>
+                                <a href="#" class="card-summary__more">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="card-summary">
+                            <div class="card-summary__header">
+                                <div class="card-summary__icon">
+                                    <img src="./img/icons/notification.svg" alt="">
+                                </div>
+                                <h3 class="card-summary__title">Уведомления о доставке</h3>
+                            </div>
+                            <div class="card-summary__body">
+                                <p class="card-summary__paragraph">Вы всегда будете получать наши последние обновления.</p>
+                                <a href="#" class="card-summary__more">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="card-summary">
+                            <div class="card-summary__header">
+                                <div class="card-summary__icon">
+                                    <img src="./img/icons/shield.svg" alt="">
+                                </div>
+                                <h3 class="card-summary__title">Безопастный платеж</h3>
+                            </div>
+                            <div class="card-summary__body">
+                                <p class="card-summary__paragraph">Каждая пара кроссовок имеет уникальную бирку с указанием источника продажи.</p>
+                                <a href="#" class="card-summary__more">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-body">
+                <div class="footer__container">
+                    <div class="footer-body__nav">
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Air Jordan</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 1 Mid</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 5</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 6</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 11</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan Даты Выхода</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">New balance</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 327</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 530</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 2002R</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 550</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 574</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New Balance Aimé Leon Dore</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Популярные релизы</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Lightning McQueen Crocs</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">NikeCraft GPS Yellow</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Jordan 2 J Balvin</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">adidas Samba</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Популярные поисковые запросы</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Популярные бренды</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Nike</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Dunk</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Blazer</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Air Force 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские Air Force 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Air</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike SB</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Одежда</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Supreme</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Essentials</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Chrome Hearts</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Vlone</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Tech Fleece</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Yeezy GAP</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Продажа</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Руководство по продаже</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Разработчики</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Женская</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские кроссовки</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женская обувь</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женская одежда</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские аксессуары</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские джорданы</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Аксессуары</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Swatch X Omega Mission</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Supreme Field Waist Bag</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Jordan Monogram Duffle Bag</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Marc Jacobs Tote Mini</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Gucci NY Yankees Cap</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Размерный ряд</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размер обуви в зависимости от бренда</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Руководство по размеру детской обуви</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размеры женской обуви</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размеры мужской обуви</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer__container">
+                    <div class="footer-bottom-nav">
+                        <a href="#" class="footer-bottom-nav__link">помощь</a>
+                        <a href="#" class="footer-bottom-nav__link">как это работает</a>
+                        <a href="#" class="footer-bottom-nav__link">конфиденциальность</a>
+                        <a href="#" class="footer-bottom-nav__link">условия пользования</a>
+                        <a href="#" class="footer-bottom-nav__link">связаться с нами</a>
+                        <a href="#" class="footer-bottom-nav__link">работать с нами</a>
+                    </div>
+                    <span class="footer-bottom__copyright">©2023 C-moon. Все права зарезервированы.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/burger.js"></script>
+</body>
+</html>
