@@ -684,8 +684,11 @@
 
     &__title {
         font-weight: 700;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 124%;
+        @media (max-width: 767.98px) {
+            text-align: center;
+        } 
     }
 
     // .footer-menu__list

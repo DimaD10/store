@@ -198,6 +198,17 @@ button, a {
     border: 1px solid #f2f2f2;
     padding: 15px;
 
+    &:hover {
+        .product-card__caption {
+            color: $orange;
+        }
+        .product-card__preview {
+            img {
+                transform: scale(1.06);
+            }
+        }
+    }
+
     @media (max-width: 1400px) {
         display: none;
         &:nth-child(-n+5) {
@@ -249,12 +260,6 @@ button, a {
 
             transition: transform ease-in-out $animSpeed;
         }
-
-        &:hover {
-            img {
-                transform: scale(1.06);
-            }
-        }
     }
 
     // .product-card__caption
@@ -270,10 +275,6 @@ button, a {
         @media (max-width: 480px) {
             text-align: center;
         }
-
-        &:hover {
-            color: $orange;
-        }
     }
 
     // .product-card__price
@@ -283,6 +284,7 @@ button, a {
         font-size: 14px;
         line-height: 17px;
         white-space: nowrap;
+        color: $black;
     }
 }
 // LIST TYPE#2
