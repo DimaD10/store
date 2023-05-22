@@ -31,7 +31,7 @@ body {
     flex: 1 1 auto;
 }
 
-button, a, .spoiler, .select {
+button, a, label, input, .spoiler, .select {
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -700,5 +700,60 @@ button, a, .spoiler, .select {
         img {
             transform: rotate(180deg);
         }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    // .pagination__nearest
+
+    &__nearest {
+        display: flex;
+        gap: 13px;
+    }
+
+    // .pagination__el
+
+    &__el {
+        min-width: 32px;
+        height: 32px;
+        padding: 0 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+
+        background-color: $input-grey;
+        color: $grey;
+
+        transition: background-color ease-in-out .2s, color ease-in-out .2s;
+
+        &:hover {
+            background-color: $orange;
+            color: $white;
+        }
+
+        // .pagination__el_current
+
+        &_current {
+            background-color: $orange;
+            color: $white;
+            pointer-events: none;
+        }
+    }
+
+    // .pagination__space
+
+    &__space {
+        display: inline-block;
+        height: 100%;
+        padding: 7px 0;
     }
 }

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="header__container">
+                    <a href="index.html" class="header__logo">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                    <div class="header__search site-search">
+                        <input type="text" class="site-search__input" placeholder="Поиск" id="global-search">
+                        <button class="site-search__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L20.5 19L19 20.5L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z" fill="#0A0A0A"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="header__nav header-menu header-menu_top">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Новости</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">О нас</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Помощь</a></li>
+                    </ul>
+                    <div class="header__user-opt user-opt">
+                        <button class="user-opt__button button-stroke">Войти</button>
+                        <button class="user-opt__button button-filled">Регистрация</button>
+                    </div>
+
+                    <button class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header__container">
+                    <div class="header__search site-search">
+                        <input type="text" class="site-search__input" placeholder="Поиск" id="global-search-second">
+                        <button class="site-search__btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L20.5 19L19 20.5L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z" fill="#0A0A0A"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <ul class="header__menu header-menu header-menu_bottom">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Кроссовки</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Обувь</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Одежда</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Акссесуары</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Мужское</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Женское</a></li>
+                    </ul>
+
+                    <ul class="header__nav header-menu header-menu_top">
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Новости</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">О нас</a></li>
+                        <li class="header-menu__el"><a href="#" class="header-menu__link">Помощь</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__category category">
+                <div class="category__container-small">
+                    <div class="category__wrapper">
+                        <h1 class="category__title">Кроссовки</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__catalog catalog">
+                <div class="catalog__container-small">
+                    <div class="catalog__wrapper">
+                        <button class="close-filter">x</button>
+                        <div class="catalog__aside">
+
+                            <ul class="catalog__menu catalog-list">
+                                <li class="catalog-list__el catalog-list__el_current"><a href="#" class="catalog-list__link">Кроссовки</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">обувь</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">одежда</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">Акссесуары</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">мужское</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">женское</a></li>
+                            </ul>
+
+                            <ul class="catalog__menu catalog-list">
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">nike</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">jordan</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">gucci</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">crocs</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">new balance</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">adidas</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">reebok</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">louis vuitton</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">dior</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">dr. martens</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">chanel</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">prada</a></li>
+                                <li class="catalog-list__el"><a href="#" class="catalog-list__link">versace</a></li>
+                            </ul>
+
+                            <div class="catalog-size aside-part">
+                                <h3 class="aside-part__title">Размер</h3>
+
+                                <div class="catalog-size__list">
+                                    <input type="radio" class="catalog-size__input" id="size_35" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_36" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_37" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_38" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_39" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_40" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_41" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_42" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_43" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_44" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_45" name="size">
+                                    <input type="radio" class="catalog-size__input" id="size_46" name="size">
+
+
+                                    <label for="size_35" id="l-size_35" class="catalog-size__label">35</label>
+                                    <label for="size_36" id="l-size_36" class="catalog-size__label">36</label>
+                                    <label for="size_37" id="l-size_37" class="catalog-size__label">37</label>
+                                    <label for="size_38" id="l-size_38" class="catalog-size__label">38</label>
+                                    <label for="size_39" id="l-size_39" class="catalog-size__label">39</label>
+                                    <label for="size_40" id="l-size_40" class="catalog-size__label">40</label>
+                                    <label for="size_41" id="l-size_41" class="catalog-size__label">41</label>
+                                    <label for="size_42" id="l-size_42" class="catalog-size__label">42</label>
+                                    <label for="size_43" id="l-size_43" class="catalog-size__label">43</label>
+                                    <label for="size_44" id="l-size_44" class="catalog-size__label">44</label>
+                                    <label for="size_45" id="l-size_45" class="catalog-size__label">45</label>
+                                    <label for="size_46" id="l-size_46" class="catalog-size__label">46</label>
+                                </div>
+                            </div>
+
+                            <div class="catalog-size aside-part prise-choose">
+                                <h3 class="aside-part__title">Цена</h3>
+
+                                <div class="prise-choose__field">
+                                    <input type="radio" class="prise-choose__cb" name="price-prod" id="price-type1">
+                                    <label for="price-type1" id="l-price-type1" class="prise-choose__custom"></label>
+                                    <label for="price-type1" class="prise-choose__label">До 2000 ₽</label>
+                                </div>
+
+                                <div class="prise-choose__field">
+                                    <input type="radio" class="prise-choose__cb" name="price-prod" id="price-type2">
+                                    <label for="price-type2" id="l-price-type2" class="prise-choose__custom"></label>
+                                    <label for="price-type2" class="prise-choose__label">2000 - 4000 ₽</label>
+                                </div>
+
+                                <div class="prise-choose__field">
+                                    <input type="radio" class="prise-choose__cb" name="price-prod" id="price-type3">
+                                    <label for="price-type3" id="l-price-type3" class="prise-choose__custom"></label>
+                                    <label for="price-type3" class="prise-choose__label">4000 - 6000 ₽</label>
+                                </div>
+
+                                <div class="prise-choose__field">
+                                    <input type="radio" class="prise-choose__cb" name="price-prod" id="price-type4">
+                                    <label for="price-type4" id="l-price-type4" class="prise-choose__custom"></label>
+                                    <label for="price-type4" class="prise-choose__label">6000 - 10000 ₽</label>
+                                </div>
+
+                                <div class="prise-choose__field">
+                                    <input type="radio" class="prise-choose__cb" name="price-prod" id="price-type5">
+                                    <label for="price-type5" id="l-price-type5" class="prise-choose__custom"></label>
+                                    <label for="price-type5" class="prise-choose__label">10000 ₽ +</label>
+                                </div>
+                            </div>
+
+                            <div class="catalog-type aside-part type-choose">
+                                <h3 class="aside-part__title">Тип размера</h3>
+
+                                <div class="prise-choose__field">
+                                    <input type="radio" class="prise-choose__cb" name="type-prod" id="type1">
+                                    <label for="type1" id="l-type1" class="prise-choose__custom"></label>
+                                    <label for="type1" class="prise-choose__label">Мужское</label>
+                                </div>
+
+                                <div class="prise-choose__field">
+                                    <input type="radio" class="prise-choose__cb" name="type-prod" id="type2">
+                                    <label for="type2" id="l-type2" class="prise-choose__custom"></label>
+                                    <label for="type2" class="prise-choose__label">Женское</label>
+                                </div>
+
+                                <div class="prise-choose__field">
+                                    <input type="radio" class="prise-choose__cb" name="type-prod" id="type3">
+                                    <label for="type3" id="l-type3" class="prise-choose__custom"></label>
+                                    <label for="type3" class="prise-choose__label">Ребенок</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__body catalog-body">
+                            <button class="catalog-body__filter-btn">
+                                Фильтр
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.9994 19.88C15.0394 20.18 14.9394 20.5 14.7094 20.71C14.3194 21.1 13.6894 21.1 13.2994 20.71L9.28937 16.7C9.05937 16.47 8.95937 16.16 8.99937 15.87V10.75L4.20937 4.62C3.86937 4.19 3.94937 3.56 4.37937 3.22C4.56937 3.08 4.77937 3 4.99937 3H18.9994C19.2194 3 19.4294 3.08 19.6194 3.22C20.0494 3.56 20.1294 4.19 19.7894 4.62L14.9994 10.75V19.88ZM7.03937 5L10.9994 10.06V15.58L12.9994 17.58V10.05L16.9594 5H7.03937Z" fill="black"/>
+                                </svg>
+                            </button>
+                            <div class="catalog-body__header">
+                                <div class="breadcrumbs">
+                                    <div class="breadcrumbs__line">
+                                        <a href="index.html" class="breadcrumbs__el">Главная</a>
+                                        <a href="#" class="breadcrumbs__el breadcrumbs__el_current">Кроссовки</a>
+                                    </div>
+                                </div>
+
+                                <div class="catalog-body__sort select">
+                                    <div class="select__header">
+                                        <span class="select__label">Сортировка:</span>
+                                        <div class="select__current">Рекомендуемые</div>
+                                        <div class="select__icon"><img src="./img/icons/chevron-down.svg" alt=""></div>
+                                    </div>
+                                    <div class="select__body">
+                                        <div class="select__item">Рекомендуемые</div>
+                                        <div class="select__item">Старые</div>
+                                        <div class="select__item">Новые</div>
+                                        <div class="select__item">Дорогие</div>
+                                        <div class="select__item">Дешевые</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-body__list">
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+        
+                                <a href="product-page.html" class="product-card">
+                                    <div class="product-card__preview">
+                                        <img src="./img/product/img1.png" alt="">
+                                    </div>
+                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
+                                    <span class="product-card__price">5 999 ₽</span>
+                                </a>
+                            </div>
+
+                            <div class="pagination">
+                                <div class="pagination__nearest">
+                                    <a href="#" class="pagination__el pagination__el_current">1</a>
+                                    <a href="#" class="pagination__el">2</a>
+                                    <a href="#" class="pagination__el">3</a>
+                                    <a href="#" class="pagination__el">4</a>
+                                </div>
+                                <span class="pagination__space">...</span>
+                                <div class="pagination__last">
+                                    <a href="#" class="pagination__el">25</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-body">
+                <div class="footer__container">
+                    <div class="footer-body__nav">
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Air Jordan</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 1 Mid</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 5</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 6</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan 11</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Air Jordan Даты Выхода</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">New balance</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 327</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 530</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 2002R</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 550</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New balance 574</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">New Balance Aimé Leon Dore</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Популярные релизы</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Lightning McQueen Crocs</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">NikeCraft GPS Yellow</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Jordan 2 J Balvin</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">adidas Samba</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Популярные поисковые запросы</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Популярные бренды</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Nike</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Dunk</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Blazer</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Air Force 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские Air Force 1</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Air</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike SB</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Одежда</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Supreme</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Essentials</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Chrome Hearts</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Vlone</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Nike Tech Fleece</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Yeezy GAP</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Продажа</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Руководство по продаже</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Разработчики</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Женская</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские кроссовки</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женская обувь</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женская одежда</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские аксессуары</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Женские джорданы</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Аксессуары</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Swatch X Omega Mission</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Supreme Field Waist Bag</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Jordan Monogram Duffle Bag</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Marc Jacobs Tote Mini</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Gucci NY Yankees Cap</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-menu">
+                            <h3 class="footer-menu__title">Размерный ряд</h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размер обуви в зависимости от бренда</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Руководство по размеру детской обуви</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размеры женской обуви</a></li>
+                                <li class="footer-menu__el"><a href="#" class="footer-menu__link">Размеры мужской обуви</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer__container">
+                    <div class="footer-bottom-nav">
+                        <a href="#" class="footer-bottom-nav__link">помощь</a>
+                        <a href="#" class="footer-bottom-nav__link">как это работает</a>
+                        <a href="#" class="footer-bottom-nav__link">конфиденциальность</a>
+                        <a href="#" class="footer-bottom-nav__link">условия пользования</a>
+                        <a href="#" class="footer-bottom-nav__link">связаться с нами</a>
+                        <a href="#" class="footer-bottom-nav__link">работать с нами</a>
+                    </div>
+                    <span class="footer-bottom__copyright">©2023 C-moon. Все права зарезервированы.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/filter.js"></script>
+</body>
+</html>

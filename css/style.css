@@ -109,7 +109,7 @@ body {
           flex: 1 1 auto;
 }
 
-button, a, .spoiler, .select {
+button, a, label, input, .spoiler, .select {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -842,6 +842,58 @@ button, a, .spoiler, .select {
 .spoiler._opened .spoiler__decor img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 13px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.pagination__nearest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+}
+.pagination__el {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  background-color: #F9F9F9;
+  color: #333;
+  -webkit-transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+}
+.pagination__el:hover {
+  background-color: #FF9000;
+  color: #fff;
+}
+.pagination__el_current {
+  background-color: #FF9000;
+  color: #fff;
+  pointer-events: none;
+}
+.pagination__space {
+  display: inline-block;
+  height: 100%;
+  padding: 7px 0;
 }
 
 .header__logo {
