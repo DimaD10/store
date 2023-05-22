@@ -109,7 +109,7 @@ body {
           flex: 1 1 auto;
 }
 
-button, a, label, input, .auth__tab, .spoiler, .select {
+button, a, label, input, .spoiler, .select {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -924,148 +924,12 @@ button, a, label, input, .auth__tab, .spoiler, .select {
   color: #0A0A0A;
 }
 
-.form {
+.auth__form {
+  max-width: 415px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.form__input {
-  height: 50px;
   width: 100%;
-  padding: 0 18px;
-  border: 1px solid #E0E0E0;
-  margin-bottom: 12px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #333;
-}
-.form__input::-webkit-input-placeholder {
-  color: #828282;
-}
-.form__input::-moz-placeholder {
-  color: #828282;
-}
-.form__input:-ms-input-placeholder {
-  color: #828282;
-}
-.form__input::-ms-input-placeholder {
-  color: #828282;
-}
-.form__input::placeholder {
-  color: #828282;
-}
-.form__input_label {
-  margin-bottom: 0 !important;
-}
-.form__label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #828282;
-  padding: 5px 18px;
-  margin-bottom: 12px;
-}
-.form__button {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 12px;
-  height: 50px;
-  background-color: #0A0A0A;
-}
-.form__button:hover {
-  background-color: #333;
-}
-
-.categories__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 30px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
-}
-@media (max-width: 1200px) {
-  .categories__list {
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media (max-width: 991.98px) {
-  .categories__list {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 667.98px) {
-  .categories__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
-  }
-}
-@media (max-width: 1200px) {
-  .categories__list .category-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .categories__list .category-card:nth-child(-n+4) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media (max-width: 991.98px) {
-  .categories__list .category-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .categories__list .category-card:nth-child(-n+4) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .categories__list .category-card:nth-child(-n+3) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media (max-width: 767.98px) {
-  .categories__list .category-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .categories__list .category-card:nth-child(-n+4) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media (max-width: 480px) {
-  .categories__list .category-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .categories__list .category-card:nth-child(-n+4) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .categories__list .category-card:nth-child(-n+3) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+  margin: 0 auto;
+  padding: 30px 0;
 }

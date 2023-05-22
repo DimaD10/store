@@ -1,0 +1,157 @@
+@import "fonts.scss";
+@import "null.scss";
+@import "var.scss";
+@import "ui.scss";
+
+
+.header {
+    &__logo {
+        margin: 0 auto;
+    }
+}
+
+.main {
+    background-color: $dark-white;
+
+    // .main__auth
+
+    &__auth {
+        margin: 70px 0;
+    }
+}
+.auth {
+
+
+    &__form {
+        max-width: 415px;
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        margin: 0 auto;
+
+        background-color: $white;
+        border: 1px solid #BDBDBD;
+        border-radius: 3px;
+        padding-bottom: 20px;
+    }
+
+    &__form-wrapper {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        overflow: hidden;
+
+        transition: height cubic-bezier(.51,.92,.24,1.15) .2s;
+    }
+}
+
+.auth-form {
+    flex: 0 0 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    transition: transform cubic-bezier(.25,.75,.5,1.25) $animSpeed;
+
+    padding: 0 15px;
+    padding-top: 5px;
+}
+
+.auth__form.reg {
+    .auth-form {
+        transform: translateX(0%);
+    }
+}
+.auth__form.log {
+    .auth-form {
+        transform: translateX(-100%);
+    }
+}
+
+.auth {
+
+    // .auth__nav
+
+    &__nav {
+        display: flex;
+        gap: 5px;
+
+        padding: 20px 15px;
+    }
+
+    // .auth__tab
+
+    &__tab {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        padding: 0 10px;
+        padding-bottom: 15px;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: $light-grey;
+
+        transition: color ease-in-out $animSpeed, border ease-in-out$animSpeed;
+        border-bottom: 2px solid $light-grey;
+
+        &_current {
+            color: $black;
+            border-bottom: 2px solid $black;
+        }
+
+        &:hover {
+            color: $black;
+        }
+    }
+}
+
+
+.auth {
+
+    // .auth__policy
+
+    &__policy {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+
+        color: $light-dark;
+
+        a {
+            color: $black;
+        }
+
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+.account-actions {
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: center;
+
+    button {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+
+        text-align: center;
+        text-decoration-line: underline;
+
+        background-color: transparent;
+
+        color: $orange;
+
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="header__container">
+                    <a href="index.html" class="header__logo">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__auth auth">
+                <div class="auth__container">
+                    <div class="auth__form reg">
+                        <div class="auth__nav">
+                            <div data-action="reg" class="auth__tab auth__tab_current">Регистрация</div>
+                            <div data-action="log" class="auth__tab">Авторизация</div>
+                        </div>
+                        <div class="auth__form-wrapper">
+                            <div class="auth-form form-register">
+                                <form class="form">
+                                    <input type="text" class="form__input" placeholder="Имя">
+                                    <input type="password" class="form__input" placeholder="Фамилия">
+                                    <input type="text" class="form__input" placeholder="Email">
+                                    <input type="password" class="form__input form__input_label" placeholder="Пароль">
+                                    <span class="form__label">
+                                        Минимум 6 символов
+                                    </span>
+
+                                    <button class="form__button button-filled">Регистрация</button>
+                                </form>
+                                <p class="auth__policy">
+                                    Регистрируясь, вы соглашаетесь с  <a href="#">Политикой конфиденциальности</a>
+                                </p>
+                                <p class="account-actions">Уже есть учетная запись? <button class="call-form" data-action="log">Авторизоваться</button></p>
+                            </div>
+                            <div class="auth-form form-login">
+                                <form class="form">
+                                    <input type="text" class="form__input" placeholder="Email">
+                                    <input type="password" class="form__input" placeholder="Пароль">
+                                    <button class="form__button button-filled">Войти</button>
+                                </form>
+                                <p class="auth__policy">
+                                    Входя в аккаунт, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+                                </p>
+                                <p class="account-actions">Нету аккаунта? <button class="call-form" data-action="reg">Создать</button></p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/select.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>
