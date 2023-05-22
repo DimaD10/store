@@ -1098,7 +1098,7 @@ button, a, label, input, .spoiler, .select {
   cursor: pointer;
 }
 .catalog-size__label:hover {
-  background-color: #333;
+  background-color: #BDBDBD;
   color: #fff;
 }
 .catalog-size__list {
