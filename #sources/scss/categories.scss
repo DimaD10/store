@@ -1,0 +1,75 @@
+@import "fonts.scss";
+@import "null.scss";
+@import "var.scss";
+@import "ui.scss";
+
+
+.main {
+
+    // .main__categories
+
+    &__categories {
+    }
+}
+.categories {
+
+    // .categories__container
+
+    &__container {
+    }
+
+    // .categories__list
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 20px;
+
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media (max-width: 991.98px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 667.98px) {
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+
+
+        .category-card {
+            @media (max-width: 1200px) {
+                display: flex;
+                &:nth-child(-n+4) {
+                    display: flex;
+                }
+            }
+            @media (max-width: 991.98px) {
+                display: flex;
+                &:nth-child(-n+4) {
+                    display: flex;
+                }
+                &:nth-child(-n+3) {
+                    display: flex;
+                }   
+            }
+            @media (max-width: 767.98px) {
+                display: flex;
+                &:nth-child(-n+4) {
+                    display: flex;
+                }
+            }
+            @media (max-width: 480px) {
+                display: flex;
+                &:nth-child(-n+4) {
+                    display: flex;
+                }
+                &:nth-child(-n+3) {
+                    display: flex;
+                }
+            }
+        
+        }
+    }
+}

@@ -757,3 +757,39 @@ button, a, label, input, .spoiler, .select {
         padding: 7px 0;
     }
 }
+
+
+.main {
+
+    // .main__category
+
+    &__category {
+        margin: 55px 0;
+
+        @media (max-width: 1200px) {
+            margin-top: calc(25px + (55 - 25) * ( (100vw - 320px) / (1200 - 320)));
+        }
+    }
+}
+.category {
+
+    &__wrapper {
+        background-color: $opacity-orange;
+        padding: 25px 30px;
+        @media (max-width: 1200px) {
+            padding-top: calc(18px + (25 - 18) * ( (100vw - 320px) / (1200 - 320)));
+            padding-bottom: calc(18px + (25 - 18) * ( (100vw - 320px) / (1200 - 320)));
+            padding-left: calc(20px + (30 - 20) * ( (100vw - 320px) / (1200 - 320)));
+            padding-right: calc(20px + (30 - 20) * ( (100vw - 320px) / (1200 - 320)));
+        }
+    }
+
+    // .category__title
+
+    &__title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $black;
+    }
+}

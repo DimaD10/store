@@ -7,6 +7,7 @@
     <title>Store</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/categories.css">
 </head>
 <body>
     <div class="wrapper">
@@ -70,100 +71,17 @@
             </div>
         </header>
         <main class="main">
-            <div class="main__presentation presentation">
-                <div class="presentation__container">
-                    <div class="presentation-slider">
-                        <div class="swiper-wrapper">
-                            <a href="#" class="swiper-slide">
-                                <img src="./img/hero-slider/1.png" alt="">
-                            </a>
-                            <a href="#" class="swiper-slide">
-                                <img src="./img/hero-slider/2.png" alt="">
-                            </a>
-                            <a href="#" class="swiper-slide">
-                                <img src="./img/hero-slider/3.png" alt="">
-                            </a>
-                            <a href="#" class="swiper-slide">
-                                <img src="./img/hero-slider/4.png" alt="">
-                            </a>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <button class="swiper-button-prev"></button>
-                        <button class="swiper-button-next"></button>
-                    </div>
-                </div>
-            </div>
-
-            <section class="main__recomendation recomendation">
-                <div class="recomendation__container">
-                    <h2 class="recomendation__title title">Рекомендовано для вас</h2>
-                    <div class="recomendation__list product-list">
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
+            <section class="main__category category">
+                <div class="category__container-small">
+                    <div class="category__wrapper">
+                        <h1 class="category__title">Бренды</h1>
                     </div>
                 </div>
             </section>
 
-            <section class="main__popular popular">
-                <div class="popular__container">
-                    <div class="popular__header list-header">
-                        <h2 class="popular__title title">Популярные бренды кроссовок</h2>
-                        <a href="brends.html" class="popular__link link-more">
-                            Смотреть все
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#0A0A0A"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="popular__list categories-list">
+            <section class="main__categories categories">
+                <div class="categories__container-small ">
+                    <div class="categories__list">
                         <a href="catalog.html" class="category-card" title="Jordan">
                             <div class="category-card__preview">
                                 <img src="./img/popular/img1.png" alt="">
@@ -223,248 +141,126 @@
                                 </div>
                             </div>
                         </a>
-                    </div>
-                </div>
-            </section>
 
-            <div class="main__banners banners">
-                <div class="banners__container">
-                    <div class="banners__list">
-                        <a href="#" class="banners__card">
-                            <img src="./img/banners/img1.png" alt="">
-                        </a>
-                        <a href="#" class="banners__card">
-                            <img src="./img/banners/img2.png" alt="">
-                        </a>
-                        <a href="#" class="banners__card">
-                            <img src="./img/banners/img3.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main__posters posters">
-                <div class="posters__container">
-                    <div class="posters__list">
-                        <a href="#" class="posters__card">
-                            <img src="./img/posters/img1.png" alt="">
-                        </a>
-                        <a href="#" class="posters__card">
-                            <img src="./img/posters/img2.png" alt="">
-                        </a>
-                        <a href="#" class="posters__card">
-                            <img src="./img/posters/img3.png" alt="">
-                        </a>
-                        <a href="#" class="posters__card">
-                            <img src="./img/posters/img4.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <section class="main__trends trends">
-                <div class="trends__container">
-                    <div class="trends__header list-header">
-                        <h2 class="trends__title title">В тренде</h2>
-                        <a href="catalog.html" class="trends__link link-more">
-                            Смотреть все
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#0A0A0A"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="trends__list product-list">
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-                        
-                        <a href="product-page.html" class="product-card">
-                            <div class="product-card__preview">
-                                <img src="./img/product/img1.png" alt="">
-                            </div>
-                            <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                            <span class="product-card__price">5 999 ₽</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__popular popular">
-                <div class="popular__container">
-                    <div class="popular__header list-header">
-                        <h2 class="popular__title title">Категории</h2>
-                        <a href="categories.html" class="popular__link link-more">
-                            Смотреть все
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.41 8.58008L12 13.1701L16.59 8.58008L18 10.0001L12 16.0001L6 10.0001L7.41 8.58008Z" fill="#0A0A0A"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="popular__list categories-list">
-                        <a href="catalog.html" class="category-card" title="Футболки">
+                        <a href="catalog.html" class="category-card" title="Jordan">
                             <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
+                                <img src="./img/popular/img1.png" alt="">
                             </div>
                             <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
+                                <h3 class="category-card__title">Jordan</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Jordan.svg" alt="">
+                                </div>
                             </div>
                         </a>
 
-                        <a href="catalog.html" class="category-card" title="Худи">
+                        <a href="catalog.html" class="category-card" title="New balance">
                             <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
+                                <img src="./img/popular/img2.png" alt="">
                             </div>
                             <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
+                                <h3 class="category-card__title">New balance</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/NB.svg" alt="">
+                                </div>
                             </div>
                         </a>
 
-                        <a href="catalog.html" class="category-card" title="Куртки">
+                        <a href="catalog.html" class="category-card" title="Reebok">
                             <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
+                                <img src="./img/popular/img3.png" alt="">
                             </div>
                             <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
+                                <h3 class="category-card__title">Reebok</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Reebok.svg" alt="">
+                                </div>
                             </div>
                         </a>
 
-                        <a href="catalog.html" class="category-card" title="Обувь">
+                        <a href="catalog.html" class="category-card" title="Adidas">
                             <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
+                                <img src="./img/popular/img4.png" alt="">
                             </div>
                             <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
+                                <h3 class="category-card__title">Adidas</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/adidas.svg" alt="">
+                                </div>
                             </div>
                         </a>
 
-                        <a href="catalog.html" class="category-card" title="Штаны">
+                        <a href="catalog.html" class="category-card" title="Nike">
                             <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
+                                <img src="./img/popular/img5.png" alt="">
                             </div>
                             <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
+                                <h3 class="category-card__title">Nike</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Nike.svg" alt="">
+                                </div>
                             </div>
                         </a>
-                    </div>
-                </div>
-            </section>
 
-            <section class="main__summary summary">
-                <div class="summary__container">
-                    <div class="summary__list">
-                        <div class="card-summary">
-                            <div class="card-summary__header">
-                                <div class="card-summary__icon">
-                                    <img src="./img/icons/check.svg" alt="">
+                        <a href="catalog.html" class="category-card" title="Jordan">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img1.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Jordan</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Jordan.svg" alt="">
                                 </div>
-                                <h3 class="card-summary__title">C-moon Verified</h3>
                             </div>
-                            <div class="card-summary__body">
-                                <p class="card-summary__paragraph">C-moon Verified -  это наше собственное обозначение, означающее, что мы проверяем каждый товар на подлинность.</p>
-                                <a href="#" class="card-summary__more">Подробнее</a>
-                            </div>
-                        </div>
+                        </a>
 
-                        <div class="card-summary">
-                            <div class="card-summary__header">
-                                <div class="card-summary__icon">
-                                    <img src="./img/icons/heart-circle-outline.svg" alt="">
+                        <a href="catalog.html" class="category-card" title="New balance">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img2.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">New balance</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/NB.svg" alt="">
                                 </div>
-                                <h3 class="card-summary__title">Наше обещание</h3>
                             </div>
-                            <div class="card-summary__body">
-                                <p class="card-summary__paragraph">Мы стремимся заслужить и сохранить ваше доверие. Если мы совершим ошибку, мы все исправим.</p>
-                                <a href="#" class="card-summary__more">Подробнее</a>
-                            </div>
-                        </div>
+                        </a>
 
-                        <div class="card-summary">
-                            <div class="card-summary__header">
-                                <div class="card-summary__icon">
-                                    <img src="./img/icons/cash-multiple.svg" alt="">
+                        <a href="catalog.html" class="category-card" title="Reebok">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img3.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Reebok</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Reebok.svg" alt="">
                                 </div>
-                                <h3 class="card-summary__title">Начните продавать как можно скорее</h3>
                             </div>
-                            <div class="card-summary__body">
-                                <p class="card-summary__paragraph">Вы можете начать продажи на складе всего за несколько кликов, при этом процесс подачи заявки не требуется.</p>
-                                <a href="#" class="card-summary__more">Подробнее</a>
-                            </div>
-                        </div>
+                        </a>
 
-                        <div class="card-summary">
-                            <div class="card-summary__header">
-                                <div class="card-summary__icon">
-                                    <img src="./img/icons/truck-delivery.svg" alt="">
+                        <a href="catalog.html" class="category-card" title="Adidas">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img4.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Adidas</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/adidas.svg" alt="">
                                 </div>
-                                <h3 class="card-summary__title">Бесплатная доставка и возврат товара</h3>
                             </div>
-                            <div class="card-summary__body">
-                                <p class="card-summary__paragraph">Каждый товар доставляется бесплатно</p>
-                                <a href="#" class="card-summary__more">Подробнее</a>
-                            </div>
-                        </div>
+                        </a>
 
-                        <div class="card-summary">
-                            <div class="card-summary__header">
-                                <div class="card-summary__icon">
-                                    <img src="./img/icons/notification.svg" alt="">
+                        <a href="catalog.html" class="category-card" title="Nike">
+                            <div class="category-card__preview">
+                                <img src="./img/popular/img5.png" alt="">
+                            </div>
+                            <div class="category-card__label">
+                                <h3 class="category-card__title">Nike</h3>
+                                <div class="category-card__icon">
+                                    <img src="./img/icons/Nike.svg" alt="">
                                 </div>
-                                <h3 class="card-summary__title">Уведомления о доставке</h3>
                             </div>
-                            <div class="card-summary__body">
-                                <p class="card-summary__paragraph">Вы всегда будете получать наши последние обновления.</p>
-                                <a href="#" class="card-summary__more">Подробнее</a>
-                            </div>
-                        </div>
-
-                        <div class="card-summary">
-                            <div class="card-summary__header">
-                                <div class="card-summary__icon">
-                                    <img src="./img/icons/shield.svg" alt="">
-                                </div>
-                                <h3 class="card-summary__title">Безопастный платеж</h3>
-                            </div>
-                            <div class="card-summary__body">
-                                <p class="card-summary__paragraph">Каждая пара кроссовок имеет уникальную бирку с указанием источника продажи.</p>
-                                <a href="#" class="card-summary__more">Подробнее</a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -595,5 +391,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/burger.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
 </html>
