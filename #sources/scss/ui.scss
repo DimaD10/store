@@ -31,8 +31,14 @@ body {
     flex: 1 1 auto;
 }
 
-button, a, label, input, .auth__tab, .spoiler, .select {
+button, a, label, input, .admin-edit__point, .cab-nav__leave, .cab-nav__el, .auth__tab, .spoiler, .select {
     -webkit-tap-highlight-color: transparent;
+}
+input[type='number'] {
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 }
 
 .burger {
@@ -579,6 +585,7 @@ button, a, label, input, .auth__tab, .spoiler, .select {
     }
 }
 .select._opened {
+    z-index: 99;
     .select__icon {
         transform: rotate(180deg);
     }
@@ -821,6 +828,12 @@ button, a, label, input, .auth__tab, .spoiler, .select {
         &_label {
             margin-bottom: 0 !important;
         }
+
+        &_file {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0;
+        }
     }
 
     &__label {
@@ -832,6 +845,44 @@ button, a, label, input, .auth__tab, .spoiler, .select {
 
         margin-bottom: 12px;
     }
+    &__photo-label {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        padding: 0 18px;
+        border: 1px solid #E0E0E0;
+
+        margin-bottom: 12px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $light-dark;
+    }
+
+    &__textarea {
+        display: flex;
+        align-items: center;
+        font-family: Inter;
+        resize: vertical;
+        min-height: 220px;
+        height: 50px;
+        width: 100%;
+        padding: 15px 18px;
+        border: 1px solid #E0E0E0;
+
+        margin-bottom: 12px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey;
+
+        &::placeholder {
+            color: $light-dark;
+        }
+    }
 
     // .form__button
 
@@ -839,10 +890,52 @@ button, a, label, input, .auth__tab, .spoiler, .select {
         justify-content: center;
         margin-top: 12px;
         height: 50px;
-        background-color: $black;
+    }
 
-        &:hover {
-            background-color: $grey;
+    // .form__buttons
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    &__inputs-row {
+        display: flex;
+        gap: 20px;
+
+        input, .select {
+            flex: 1 1 50%;
+            @media (max-width: 480px) {
+                flex: 1 1 auto;
+            }
         }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+
+
+    .select {
+        &__header {
+            border-radius: 0;
+            border: 1px solid #E0E0E0;
+            color: $light-dark;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+        &__current {
+            color: $light-dark;
+            margin-left: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__body {
+            border: 1px solid #E0E0E0;
+        }
+
+        margin-bottom: 12px;
     }
 }

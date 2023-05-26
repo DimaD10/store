@@ -155,3 +155,17 @@
 
     }
 }
+
+.form {
+    &__button {
+        background-color: $black;
+
+        &:hover {
+            background-color: $grey;
+        }
+    }
+}
+
+.footer {
+    margin: 0;
+}

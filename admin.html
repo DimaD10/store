@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/product-page.css">
+    <link rel="stylesheet" href="css/cabinet.css">
 </head>
 <body>
     <div class="wrapper">
@@ -71,234 +70,176 @@
             </div>
         </header>
         <main class="main">
-            <div class="main__breadcrumbs breadcrumbs">
-                <div class="breadcrumbs__container-small">
-                    <div class="breadcrumbs__line">
-                        <a href="index.html" class="breadcrumbs__el">Главная</a>
-                        <a href="#" class="breadcrumbs__el">Кроссовки </a>
-                        <a href="#" class="breadcrumbs__el">Air Jordan</a>
-                        <a href="#" class="breadcrumbs__el breadcrumbs__el_current">Jordan 4 Retro Thunder (2023)</a>
-                    </div>
-                </div>
-            </div>
-
-            <section class="main__product product">
-                <div class="product__container-small">
-                    <div class="product__header">
-                        <h2 class="product__title">Jordan 4 Retro</h2>
-                        <span class="product__subtitle">Thunder (2023)</span>
-                    </div>
-                    <div class="product__body body-prod">
-                        <div class="body-prod__slider">
-                            <div class="slider-product">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="./img/prod-slider/img1.png" alt="">
+            <section class="main__cabinet cabinet cabinet_admin">
+                <div class="cabinet__container-small">
+                    <div class="cabinet__wrapper">
+                        <div class="cabinet__body">
+                            <div class="cabinet__aside">
+                                <h1 class="cabinet__username">Admin</h1>
+                                <div class="cabinet__navigation cab-nav">
+                                    <div class="cab-nav__el cab-nav__el_current">
+                                        <h2 class="cab-nav__title">Профиль</h2>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/prod-slider/img2.png" alt="">
+                                    <div class="cab-nav__el">
+                                        <h2 class="cab-nav__title">Админ-панель</h2>
+                                    </div>                                
+                                    <div class="cab-nav__el">
+                                        <h2 class="cab-nav__title">Список пользователей</h2>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/prod-slider/img3.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/prod-slider/img4.png" alt="">
+                                    <div class="cab-nav__leave">
+                                        <button id="leave-cabinet" class="cab-nav__title">Выйти</button>
                                     </div>
                                 </div>
+    
                             </div>
-                            <div class="product-thumbs">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="./img/prod-slider/img1.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/prod-slider/img2.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/prod-slider/img3.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./img/prod-slider/img4.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="cabinet__content">
+                                <div class="content-section content-section_showed">
+                                    <div class="content-section__header">
+                                        <h2 class="content-section__title">Профиль</h2>
 
-                        <div class="body-prod__info prod-info">
-                            <div class="prod-info__status">2383 Продано за Последние 3 Дня!</div>
-
-                            <div class="prod-info__actions">
-                                <div class="prod-info__size select">
-                                    <div class="select__header">
-                                        <span class="select__label">Размер:</span>
-                                        <div class="select__current"></div>
-                                        <div class="select__icon"><img src="./img/icons/chevron-down.svg" alt=""></div>
+                                        <button class="profile-edit button-stroke">Редактировать</button>
                                     </div>
-                                    <div class="select__body">
-                                        <div class="select__item">36</div>
-                                        <div class="select__item">37</div>
-                                        <div class="select__item">38</div>
-                                        <div class="select__item">39</div>
-                                        <div class="select__item">40</div>
-                                        <div class="select__item">41</div>
-                                        <div class="select__item">42</div>
-                                        <div class="select__item">43</div>
-                                        <div class="select__item">44</div>
-                                        <div class="select__item">45</div>
-                                        <div class="select__item">46</div>
-                                    </div>
-                                </div>
-
-                                <div class="prod-info__buttons">
-                                    <button class="prod-info__button button-stroke">
-                                        В избранное
-                                    </button>
-                                    <button class="prod-info__button button-orange">
-                                        Купить
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="prod-info__spoilers">
-                                <div class="prod-info__spoiler spoiler">
-                                    <div class="spoiler__header">
-                                        <div class="spoiler__icon">
-                                            <img src="./img/icons/check.svg" alt="">
-                                        </div>
-                                        <h3 class="spoiler__title">C-moon Verified</h3>
-
-                                        <span class="spoiler__status status">Состояние: <span class="status__status">Новый</span></span>
-
-                                        <div class="spoiler__decor">
-                                            <img src="./img/icons/chevron-down.svg" alt="">
+                                    <div class="content-section__body">
+                                        <div class="profile-info">
+                                            <div class="profile-info__box">
+                                                <h3 class="profile-info__title">Имя</h3>
+                                                <p class="profile-info__info">User Username</p>
+                                            </div>
+                                            <div class="profile-info__box">
+                                                <h3 class="profile-info__title">Email</h3>
+                                                <p class="profile-info__info">User@mail.ru</p>
+                                            </div>
+                                            <div class="profile-info__box">
+                                                <h3 class="profile-info__title">Никнейм</h3>
+                                                <p class="profile-info__info">User</p>
+                                            </div>
+                                            <div class="profile-info__box">
+                                                <h3 class="profile-info__title">Номер телефона</h3>
+                                                <p class="profile-info__info">+7 (918) 313-13-41</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="spoiler__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusantium necessitatibus similique?</div>
                                 </div>
-                                <div class="prod-info__spoiler spoiler">
-                                    <div class="spoiler__header">
-                                        <div class="spoiler__icon">
-                                            <img src="./img/icons/heart-circle-outline.svg" alt="">
+                                <div class="content-section">
+                                    <div class="content-section__header">
+                                        <h2 class="content-section__title">Админ-панель</h2>
+                                    </div>
+                                    <div class="content-section__body">
+                                        <div class="admin-edit">
+                                            <div class="admin-edit__point">Добавить товар</div>
+                                            <div class="admin-edit__point">Добавить категорию</div>
+                                            <div class="admin-edit__point">Добавить бренд</div>
+                                            <div class="admin-edit__point">Добавить размер</div>
                                         </div>
-                                        <h3 class="spoiler__title">Наше обещание</h3>
+                                    </div>
+                                </div>
+                                <div class="content-section">
+                                    <div class="content-section__header">
+                                        <h2 class="content-section__title">Список пользователей</h2>
+                                    </div>
+                                    <div class="content-section__body">
+                                        <div class="followed followed_users">
+                                            <div class="followed__labels">
+                                                <div class="followed__label">id</div>
+                                                <div class="followed__label">Никнейм</div>
+                                                <div class="followed__label">Роль</div>
 
-                                        <div class="spoiler__decor">
-                                            <img src="./img/icons/chevron-down.svg" alt="">
+                                                <div class="followed__label">Действия</div>
+                                            </div>
+                                            <div class="followed__list">
+                                                <div class="followed__product">
+                                                    <div class="followed__preview">
+                                                        1
+                                                    </div>
+                                                    <div class="followed__info info-prod-box">
+                                                        <h4 class="info-prod-box__name" title="Username">Username</h4>
+                                                    </div>
+                                                    <div class="followed__price">1</div>
+                                                    <div class="followed__actions user-actions">
+                                                        <button class="user-actions__grow user-actions__grow_up">Повысить</button>
+                                                        <button class="user-actions__grow user-actions__grow_down">Понизить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="spoiler__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusantium necessitatibus similique?</div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product__descr descr-prod">
-                        <div class="descr-prod__column descr-prod__column_details">
-                            <h3 class="descr-prod__title">Детали продукта</h3>
-                            <div class="descr-prod__body">
-                                <div class="descr-prod__row-descr">
-                                    <span class="descr-prod__label">SKU</span>
-                                    <span class="descr-prod__value">DH6927-017</span>
-                                </div>
-                                <div class="descr-prod__row-descr">
-                                    <span class="descr-prod__label">Цвет</span>
-                                    <span class="descr-prod__value">BLACK/TOUR YELLOW</span>
-                                </div>
-                                <div class="descr-prod__row-descr">
-                                    <span class="descr-prod__label">Розничная цена</span>
-                                    <span class="descr-prod__value">10 999 ₽</span>
-                                </div>
-                                <div class="descr-prod__row-descr">
-                                    <span class="descr-prod__label">Дата релиза</span>
-                                    <span class="descr-prod__value">05/13/2023</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="descr-prod__column descr-prod__column_description">
-                            <h3 class="descr-prod__title">Описание продукта</h3>
-                            <div class="descr-prod__body">
-                                <p class="descr-prod__paragraph">Впервые более чем за десятилетие Air Jordan 4 Retro Thunder возвращается и будет представлен в рамках кампании бренда Jordan Весна/Лето 2023.</p>
-                                <p class="descr-prod__paragraph">Бренд Jordan вернул этот любимый поклонниками colorway, выполненный с использованием высококачественного черного верха из нубука с вкраплениями желтого цвета по всей подошве, кружевным люверсам и язычку. Культовый логотип Jumpman Майкла Джордана размещен на заднике, язычке и стельках кроссовок.</p>
-                                <p class="descr-prod__paragraph">Air Jordan 4 Retro Thunder (2023) выпущен 13 мая 2023 года по розничной цене 210 долларов.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="main__recomendation recomendation">
-                <div class="recomendation__container-small">
-                    <h2 class="recomendation__title title">Вам также может понравится</h2>
-                    <div class="recomendation__list">
-                        <div class="recomendation__list-wrapper rec-slider">
-                            <div class="swiper-wrapper">
-                                <a href="product-page.html" class="swiper-slide product-card">
-                                    <div class="product-card__preview">
-                                        <img src="./img/product/img1.png" alt="">
+                                <div class="edit-section">
+                                    <div class="edit-section__header">
+                                        <h2 class="edit-section__title">Добавить товар</h2>
                                     </div>
-                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                                    <span class="product-card__price">5 999 ₽</span>
-                                </a>
-    
-                                <a href="product-page.html" class="swiper-slide product-card">
-                                    <div class="product-card__preview">
-                                        <img src="./img/product/img1.png" alt="">
-                                    </div>
-                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                                    <span class="product-card__price">5 999 ₽</span>
-                                </a>
-    
-                                <a href="product-page.html" class="swiper-slide product-card">
-                                    <div class="product-card__preview">
-                                        <img src="./img/product/img1.png" alt="">
-                                    </div>
-                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                                    <span class="product-card__price">5 999 ₽</span>
-                                </a>
-    
-                                <a href="product-page.html" class="swiper-slide product-card">
-                                    <div class="product-card__preview">
-                                        <img src="./img/product/img1.png" alt="">
-                                    </div>
-                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                                    <span class="product-card__price">5 999 ₽</span>
-                                </a>
-    
-                                <a href="product-page.html" class="swiper-slide product-card">
-                                    <div class="product-card__preview">
-                                        <img src="./img/product/img1.png" alt="">
-                                    </div>
-                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                                    <span class="product-card__price">5 999 ₽</span>
-                                </a>
-    
-                                <a href="product-page.html" class="swiper-slide product-card">
-                                    <div class="product-card__preview">
-                                        <img src="./img/product/img1.png" alt="">
-                                    </div>
-                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                                    <span class="product-card__price">5 999 ₽</span>
-                                </a>
+                                    <div class="edit-section__body">
+                                        <form class="form">
+                                            <input type="text" class="form__input" placeholder="Название">
+                                            <input type="text" class="form__input" placeholder="Серия">
+                                            <textarea name="" id="" cols="30" rows="10" class="form__textarea" placeholder="Описание"></textarea>
+                                            <input type="email" class="form__input" placeholder="SKU">
 
-                                <a href="product-page.html" class="swiper-slide product-card">
-                                    <div class="product-card__preview">
-                                        <img src="./img/product/img1.png" alt="">
+                                            <input type="color" class="form__input form__input_file" id="prod-color">
+                                            <label for="prod-color" class="form__photo-label">Цвет</label>
+
+                                            <input type="text" class="form__input" placeholder="Розничная цена">
+                                            <input type="text" class="form__input" placeholder="Дата релиза">
+
+                                            <input type="file" class="form__input form__input_file" id="prod-photo1">
+                                            <label for="prod-photo1" class="form__photo-label">Фотография 1</label>
+
+                                            <input type="file" class="form__input form__input_file" id="prod-photo2">
+                                            <label for="prod-photo2" class="form__photo-label">Фотография 2</label>
+
+                                            <input type="file" class="form__input form__input_file" id="prod-photo3">
+                                            <label for="prod-photo3" class="form__photo-label">Фотография 3</label>
+
+                                            <input type="file" class="form__input form__input_file" id="prod-photo4">
+                                            <label for="prod-photo4" class="form__photo-label">Фотография 4</label>
+        
+                                            <button class="form__button button-filled">Добавить товар</button>
+                                        </form>
                                     </div>
-                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                                    <span class="product-card__price">5 999 ₽</span>
-                                </a>
-    
-                                <a href="product-page.html" class="swiper-slide product-card">
-                                    <div class="product-card__preview">
-                                        <img src="./img/product/img1.png" alt="">
+                                </div>
+                                <div class="edit-section">
+                                    <div class="edit-section__header">
+                                        <h2 class="edit-section__title">Добавить категорию</h2>
                                     </div>
-                                    <h3 class="product-card__caption">Wade Fission 8 SE "Moment" Wade Brand X Salventius</h3>
-                                    <span class="product-card__price">5 999 ₽</span>
-                                </a>
+                                    <div class="edit-section__body">
+                                        <form class="form">
+                                            <input type="text" class="form__input" placeholder="Название">
+
+                                            <input type="file" class="form__input form__input_file" id="category-photo">
+                                            <label for="category-photo" class="form__photo-label">Фотография</label>
+        
+                                            <button class="form__button button-filled">Добавить категорию</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="edit-section">
+                                    <div class="edit-section__header">
+                                        <h2 class="edit-section__title">Добавить бренд</h2>
+                                    </div>
+                                    <div class="edit-section__body">
+                                        <form class="form">
+                                            <input type="text" class="form__input" placeholder="Название">
+
+                                            <input type="file" class="form__input form__input_file" id="brand-photo">
+                                            <label for="brand-photo" class="form__photo-label">Фотография</label>
+
+                                            <input type="file" class="form__input form__input_file" id="brand-logo">
+                                            <label for="brand-logo" class="form__photo-label">Логотип</label>
+        
+                                            <button class="form__button button-filled">Добавить бренд</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="edit-section">
+                                    <div class="edit-section__header">
+                                        <h2 class="edit-section__title">Добавить размер</h2>
+                                    </div>
+                                    <div class="edit-section__body">
+                                        Добавить размер
+                                    </div>
+                                </div>
                             </div>
-    
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
                         </div>
                     </div>
                 </div>
@@ -428,10 +369,14 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/slider.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/select.js"></script>
-    <script src="./js/spoiler.js"></script>
+    <script src="./js/cabinet-nav.js"></script>
     <script src="./js/auth.js"></script>
+    <script>
+        function preventFormSubmit(event) {
+          event.preventDefault();
+        }
+    </script>
 </body>
 </html>
