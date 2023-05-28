@@ -1635,3 +1635,55 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .admin-edit__point:hover {
   color: #0073b6;
 }
+
+.total-price {
+  margin-top: 35px;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0A0A0A;
+}
+@media (max-width: 991.98px) {
+  .total-price {
+    margin-top: calc(18px + 17 * (100vw - 320px) / 671.98);
+  }
+}
+@media (max-width: 480px) {
+  .total-price {
+    margin-right: auto;
+  }
+}
+
+.cart__order-button {
+  margin-top: 20px;
+  margin-left: auto;
+  padding: 0 45px;
+  height: 50px;
+}
+@media (max-width: 480px) {
+  .cart__order-button {
+    margin-right: auto;
+  }
+}
+.cart .followed__labels, .cart .followed__product {
+  -ms-grid-columns: 142px 1fr 1fr 24px;
+  grid-template-columns: 142px 1fr 1fr 24px;
+}
+@media (max-width: 567.98px) {
+  .cart .followed__labels, .cart .followed__product {
+    gap: calc(12px + 23 * (100vw - 320px) / 247.98);
+    -ms-grid-columns: calc(80px + 48 * (100vw - 320px) / 247.98) calc(12px + 23 * (100vw - 320px) / 247.98) 1fr calc(12px + 23 * (100vw - 320px) / 247.98) auto calc(12px + 23 * (100vw - 320px) / 247.98) calc(18px + 6 * (100vw - 320px) / 247.98);
+    grid-template-columns: calc(80px + 48 * (100vw - 320px) / 247.98) 1fr auto calc(18px + 6 * (100vw - 320px) / 247.98);
+  }
+}
+.cart .followed__preview {
+  width: 142px;
+  height: 142px;
+}
+@media (max-width: 567.98px) {
+  .cart .followed__preview {
+    width: calc(80px + 62 * (100vw - 320px) / 247.98);
+    height: calc(80px + 62 * (100vw - 320px) / 247.98);
+  }
+}

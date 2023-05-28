@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/cabinet.css">
 </head>
 <body>
     <div class="wrapper">
@@ -70,43 +70,71 @@
             </div>
         </header>
         <main class="main">
-            <div class="main__auth auth">
-                <div class="auth__container">
-                    <div class="auth__form reg">
-                        <div class="auth__nav">
-                            <div data-auth="reg" class="auth__tab auth__tab_current">Регистрация</div>
-                            <div data-auth="log" class="auth__tab">Авторизация</div>
+            <section class="main__category category">
+                <div class="category__container-small">
+                    <div class="category__wrapper">
+                        <h1 class="category__title">Корзина</h1>
+                    </div>
+                </div>
+            </section>
+            <div class="main__cart cart">
+                <div class="cart__container-small">
+                    <div class="followed">
+                        <div class="followed__labels">
+                            <div class="followed__label">Фотография</div>
+                            <div class="followed__label">Название</div>
+                            <div class="followed__label">Цена</div>
                         </div>
-                        <div class="auth__form-wrapper">
-                            <div class="auth-form form-register">
-                                <form class="form">
-                                    <input type="text" class="form__input" placeholder="Имя">
-                                    <input type="text" class="form__input" placeholder="Фамилия">
-                                    <input type="email" class="form__input" placeholder="Email">
-                                    <input type="text" class="form__input form__input_label" placeholder="Пароль">
-                                    <span class="form__label">
-                                        Минимум 6 символов
-                                    </span>
-
-                                    <button class="form__button button-filled">Регистрация</button>
-                                </form>
-                                <p class="auth__policy">
-                                    Регистрируясь, вы соглашаетесь с  <a href="#">Политикой конфиденциальности</a>
-                                </p>
-                                <p class="account-actions">Уже есть учетная запись? <button class="call-form" data-auth="log">Авторизоваться</button></p>
+                        <div class="followed__list">
+                            <div class="followed__product">
+                                <div class="followed__preview">
+                                    <img src="./img/product/img1.png" alt="">
+                                </div>
+                                <div class="followed__info info-prod-box">
+                                    <h4 class="info-prod-box__name" title="Jordan 4 Retro">Jordan 4 Retro</h4>
+                                    <p class="info-prod-box__subtitle">Thunder (2023)</p>
+                                </div>
+                                <div class="followed__price">5 999 ₽</div>
+                                <button class="followed__rm">
+                                    <img src="./img/icons/trash-can-outline.svg" alt="">
+                                </button>
                             </div>
-                            <div class="auth-form form-login">
-                                <form class="form">
-                                    <input type="email" class="form__input" placeholder="Email">
-                                    <input type="password" class="form__input" placeholder="Пароль">
-                                    <button class="form__button button-filled">Войти</button>
-                                </form>
-                                <p class="auth__policy">
-                                    Входя в аккаунт, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
-                                </p>
-                                <p class="account-actions">Нету аккаунта? <button class="call-form" data-auth="reg">Создать</button></p>
-                            </div>    
+
+                            <div class="followed__product">
+                                <div class="followed__preview">
+                                    <img src="./img/product/img1.png" alt="">
+                                </div>
+                                <div class="followed__info info-prod-box">
+                                    <h4 class="info-prod-box__name" title="Jordan 4 Retro">Jordan 4 Retro</h4>
+                                    <p class="info-prod-box__subtitle">Thunder (2023)</p>
+                                </div>
+                                <div class="followed__price">5 999 ₽</div>
+                                <button class="followed__rm">
+                                    <img src="./img/icons/trash-can-outline.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div class="followed__product">
+                                <div class="followed__preview">
+                                    <img src="./img/product/img1.png" alt="">
+                                </div>
+                                <div class="followed__info info-prod-box">
+                                    <h4 class="info-prod-box__name" title="Jordan 4 Retro">Jordan 4 Retro</h4>
+                                    <p class="info-prod-box__subtitle">Thunder (2023)</p>
+                                </div>
+                                <div class="followed__price">5 999 ₽</div>
+                                <button class="followed__rm">
+                                    <img src="./img/icons/trash-can-outline.svg" alt="">
+                                </button>
+                            </div>
                         </div>
+
+                        <div class="total-price">
+                            <span>Итого: </span>
+                            <span class="total-price__price">3 000 ₽</span>
+                        </div>
+
+                        <button class="cart__order-button button-filled">Оформить заказ</button>
                     </div>
                 </div>
             </div>
