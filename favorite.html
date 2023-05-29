@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/cabinet.css">
 </head>
 <body>
     <div class="wrapper">
@@ -71,106 +70,91 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__category category">
-                <div class="category__container-small">
-                    <div class="category__wrapper">
-                        <h1 class="category__title">Категории</h1>
-                    </div>
-                </div>
-            </section>
+            <section class="main__cabinet cabinet">
+                <div class="cabinet__container-small">
+                    <div class="cabinet__wrapper">
+                        <div class="cabinet__body">
+                            <div class="cabinet__aside">
+                                <h1 class="cabinet__username">User Username</h1>
+                                <div class="cabinet__navigation cab-nav">
+                                    <a href="user-profile.html" class="cab-nav__el">
+                                        <h2 class="cab-nav__title">Профиль</h2>
+                                        <p class="cab-nav__descr">Основная информация о Вас</p>
+                                    </a>
+                                    <a href="user-address.html" class="cab-nav__el">
+                                        <h2 class="cab-nav__title">Адреса</h2>
+                                        <p class="cab-nav__descr">Добавьте адрес для получения заказов, или измените уже существующий</p>
+                                    </a>                                
+                                    <a href="favorite.html" class="cab-nav__el cab-nav__el_current">
+                                        <h2 class="cab-nav__title">Избранное</h2>
+                                        <p class="cab-nav__descr">Продукты, которые вы отложили</p>
+                                    </a>
+                                    <a href="#" class="cab-nav__leave">
+                                        <button id="leave-cabinet" class="cab-nav__title">Выйти</button>
+                                    </a>
+                                </div>
+    
+                            </div>
+                            <div class="cabinet__content">
+                                <div class="content-section">
+                                    <div class="content-section__header">
+                                        <h2 class="content-section__title">Избранное</h2>
+                                    </div>
+                                    <div class="content-section__body">
+                                        <div class="followed">
+                                            <div class="followed__labels">
+                                                <div class="followed__label">Фотография</div>
+                                                <div class="followed__label">Название</div>
+                                                <div class="followed__label">Цена</div>
+                                            </div>
+                                            <div class="followed__list">
+                                                <div class="followed__product">
+                                                    <div class="followed__preview">
+                                                        <img src="./img/product/img1.png" alt="">
+                                                    </div>
+                                                    <div class="followed__info info-prod-box">
+                                                        <h4 class="info-prod-box__name" title="Jordan 4 Retro">Jordan 4 Retro</h4>
+                                                        <p class="info-prod-box__subtitle">Thunder (2023)</p>
+                                                    </div>
+                                                    <div class="followed__price">5 999 ₽</div>
+                                                    <button class="followed__rm">
+                                                        <img src="./img/icons/trash-can-outline.svg" alt="">
+                                                    </button>
+                                                </div>
 
-            <section class="main__categories categories">
-                <div class="categories__container-small ">
-                    <div class="categories__list">
-                        <a href="catalog.html" class="category-card" title="Футболки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
-                            </div>
-                        </a>
+                                                <div class="followed__product">
+                                                    <div class="followed__preview">
+                                                        <img src="./img/product/img1.png" alt="">
+                                                    </div>
+                                                    <div class="followed__info info-prod-box">
+                                                        <h4 class="info-prod-box__name" title="Jordan 4 Retro">Jordan 4 Retro</h4>
+                                                        <p class="info-prod-box__subtitle">Thunder (2023)</p>
+                                                    </div>
+                                                    <div class="followed__price">5 999 ₽</div>
+                                                    <button class="followed__rm">
+                                                        <img src="./img/icons/trash-can-outline.svg" alt="">
+                                                    </button>
+                                                </div>
 
-                        <a href="catalog.html" class="category-card" title="Худи">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
+                                                <div class="followed__product">
+                                                    <div class="followed__preview">
+                                                        <img src="./img/product/img1.png" alt="">
+                                                    </div>
+                                                    <div class="followed__info info-prod-box">
+                                                        <h4 class="info-prod-box__name" title="Jordan 4 Retro">Jordan 4 Retro</h4>
+                                                        <p class="info-prod-box__subtitle">Thunder (2023)</p>
+                                                    </div>
+                                                    <div class="followed__price">5 999 ₽</div>
+                                                    <button class="followed__rm">
+                                                        <img src="./img/icons/trash-can-outline.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Куртки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Обувь">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Штаны">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Футболки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Худи">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Куртки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Обувь">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Штаны">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>

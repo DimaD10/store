@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/cabinet.css">
 </head>
 <body>
     <div class="wrapper">
@@ -71,106 +70,61 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__category category">
-                <div class="category__container-small">
-                    <div class="category__wrapper">
-                        <h1 class="category__title">Категории</h1>
-                    </div>
-                </div>
-            </section>
+            <section class="main__cabinet cabinet">
+                <div class="cabinet__container-small">
+                    <div class="cabinet__wrapper">
+                        <div class="cabinet__body">
+                            <div class="cabinet__aside">
+                                <h1 class="cabinet__username">User Username</h1>
+                                <div class="cabinet__navigation cab-nav">
+                                    <a href="user-profile.html" class="cab-nav__el cab-nav__el_current">
+                                        <h2 class="cab-nav__title">Профиль</h2>
+                                        <p class="cab-nav__descr">Основная информация о Вас</p>
+                                    </a>
+                                    <a href="user-address.html" class="cab-nav__el">
+                                        <h2 class="cab-nav__title">Адреса</h2>
+                                        <p class="cab-nav__descr">Добавьте адрес для получения заказов, или измените уже существующий</p>
+                                    </a>                                
+                                    <a href="favorite.html" class="cab-nav__el">
+                                        <h2 class="cab-nav__title">Избранное</h2>
+                                        <p class="cab-nav__descr">Продукты, которые вы отложили</p>
+                                    </a>
+                                    <a href="#" class="cab-nav__leave">
+                                        <button id="leave-cabinet" class="cab-nav__title">Выйти</button>
+                                    </a>
+                                </div>
+    
+                            </div>
+                            <div class="cabinet__content">
+                                <div class="content-section content-section_showed">
+                                    <div class="content-section__header">
+                                        <h2 class="content-section__title">Профиль</h2>
 
-            <section class="main__categories categories">
-                <div class="categories__container-small ">
-                    <div class="categories__list">
-                        <a href="catalog.html" class="category-card" title="Футболки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
+                                        <a href="edit-profile.html" class="profile-edit button-stroke">Редактировать</a>
+                                    </div>
+                                    <div class="content-section__body">
+                                        <div class="profile-info">
+                                            <div class="profile-info__box">
+                                                <h3 class="profile-info__title">Имя</h3>
+                                                <p class="profile-info__info">User Username</p>
+                                            </div>
+                                            <div class="profile-info__box">
+                                                <h3 class="profile-info__title">Email</h3>
+                                                <p class="profile-info__info">User@mail.ru</p>
+                                            </div>
+                                            <div class="profile-info__box">
+                                                <h3 class="profile-info__title">Никнейм</h3>
+                                                <p class="profile-info__info">User</p>
+                                            </div>
+                                            <div class="profile-info__box">
+                                                <h3 class="profile-info__title">Номер телефона</h3>
+                                                <p class="profile-info__info">+7 (918) 313-13-41</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Худи">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Куртки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Обувь">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Штаны">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Футболки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Худи">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Куртки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Обувь">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Штаны">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>

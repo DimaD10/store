@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/cabinet.css">
 </head>
 <body>
     <div class="wrapper">
@@ -71,106 +70,44 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__category category">
-                <div class="category__container-small">
-                    <div class="category__wrapper">
-                        <h1 class="category__title">Категории</h1>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__categories categories">
-                <div class="categories__container-small ">
-                    <div class="categories__list">
-                        <a href="catalog.html" class="category-card" title="Футболки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
+            <section class="main__cabinet cabinet cabinet_admin">
+                <div class="cabinet__container-small">
+                    <div class="cabinet__wrapper">
+                        <div class="cabinet__body">
+                            <div class="cabinet__aside">
+                                <h1 class="cabinet__username">Admin</h1>
+                                <div class="cabinet__navigation cab-nav">
+                                    <a href="admin-profile.html" class="cab-nav__el">
+                                        <h2 class="cab-nav__title">Профиль</h2>
+                                    </a>
+                                    <a href="admin-panel.html" class="cab-nav__el cab-nav__el_current">
+                                        <h2 class="cab-nav__title">Админ-панель</h2>
+                                    </a>                                
+                                    <a href="admin-user-list.html" class="cab-nav__el">
+                                        <h2 class="cab-nav__title">Список пользователей</h2>
+                                    </a>
+                                    <a href="#" class="cab-nav__leave">
+                                        <button id="leave-cabinet" class="cab-nav__title">Выйти</button>
+                                    </a>
+                                </div>
+    
                             </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
+                            <div class="cabinet__content">
+                                <div class="content-section">
+                                    <div class="content-section__header">
+                                        <h2 class="content-section__title">Админ-панель</h2>
+                                    </div>
+                                    <div class="content-section__body">
+                                        <div class="admin-edit">
+                                            <a href="add-product.html" class="admin-edit__point">Добавить товар</a>
+                                            <a href="add-category.html" class="admin-edit__point">Добавить категорию</a>
+                                            <a href="add-brand.html" class="admin-edit__point">Добавить бренд</a>
+                                            <a href="add-size.html" class="admin-edit__point">Добавить размер</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Худи">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Куртки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Обувь">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Штаны">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Футболки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Худи">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Куртки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Обувь">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Штаны">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>

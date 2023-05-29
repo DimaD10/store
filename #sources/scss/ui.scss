@@ -497,9 +497,25 @@ input[type='number'] {
     }
 }
 
+select {
+    display: flex;
+    padding: 0 15px;
+    border: 1px solid #E0E0E0;
+    height: 50px;
+}
+
 .select {
     position: relative;
     user-select: none;
+
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Gray 3 */
+
+    color: $light-dark;
 
     // .select__header
 
@@ -582,6 +598,21 @@ input[type='number'] {
 
         padding: 12px 20px;
         text-align: center;
+    }
+
+    option {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        /* Gray 3 */
+
+        color: $light-dark;
+
+        &:disabled {
+            color: #ccc;
+        }
     }
 }
 .select._opened {

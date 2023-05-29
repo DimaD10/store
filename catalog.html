@@ -215,20 +215,13 @@
                                     </div>
                                 </div>
 
-                                <div class="catalog-body__sort select">
-                                    <div class="select__header">
-                                        <span class="select__label">Сортировка:</span>
-                                        <div class="select__current">Рекомендуемые</div>
-                                        <div class="select__icon"><img src="./img/icons/chevron-down.svg" alt=""></div>
-                                    </div>
-                                    <div class="select__body">
-                                        <div class="select__item">Рекомендуемые</div>
-                                        <div class="select__item">Старые</div>
-                                        <div class="select__item">Новые</div>
-                                        <div class="select__item">Дорогие</div>
-                                        <div class="select__item">Дешевые</div>
-                                    </div>
-                                </div>
+                                <select class="catalog-body__sort select">
+                                    <option value="Заголовок" selected>Сортировка: Рекомендуемые</option>
+                                    <option value="Старые">Сортировка: Старые</option>
+                                    <option value="Новые">Сортировка: Новые</option>
+                                    <option value="Дорогие">Сортировка: Дорогие</option>
+                                    <option value="Дешевые">Сортировка: Дешевые</option>
+                                </select>
                             </div>
 
                             <div class="catalog-body__list">
@@ -533,10 +526,7 @@
         </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/slider.js"></script>
     <script src="./js/burger.js"></script>
-    <script src="./js/select.js"></script>
     <script src="./js/filter.js"></script>
     <script src="./js/auth.js"></script>
 </body>

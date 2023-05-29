@@ -24,34 +24,4 @@ window.addEventListener('click', (e) => {
         });
         contentList[elPos].classList.add('content-section_showed');
     };
-
-    if(!e.target.classList.contains("admin-edit__point_current") && e.target.classList.contains('admin-edit__point')) {
-        contentList.forEach(el => {
-            el.classList.remove('content-section_showed');
-        });
-        
-        var points = [...document.querySelectorAll('.admin-edit__point')]
-        var elPos = points.indexOf(e.target);
-        contentList.forEach(el => {
-            el.classList.remove('edit-section_showed');
-        });
-        let sections = document.querySelectorAll('.edit-section');
-        sections[elPos].classList.add('edit-section_showed');
-    };
 });
-
-document.querySelector('.profile-edit').addEventListener('click', e => {
-    contentList.forEach(el => {
-        el.classList.remove('content-section_showed');
-    });
-    document.querySelector('.edit-section').classList.add('edit-section_showed');
-})
-
-document.addEventListener('click', e => {
-    if (e.target.dataset.form === "close-edit") {
-        document.querySelectorAll('.edit-section').forEach(el => {
-            el.classList.remove('edit-section_showed');
-        })
-        contentList[0].classList.add('content-section_showed');
-    }
-})

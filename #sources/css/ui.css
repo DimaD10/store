@@ -593,12 +593,27 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   color: #4F4F4F;
 }
 
+select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  border: 1px solid #E0E0E0;
+  height: 50px;
+}
+
 .select {
   position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* Gray 3 */
+  color: #828282;
 }
 .select__header {
   display: -webkit-box;
@@ -667,6 +682,17 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   cursor: pointer;
   padding: 12px 20px;
   text-align: center;
+}
+.select option {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* Gray 3 */
+  color: #828282;
+}
+.select option:disabled {
+  color: #ccc;
 }
 
 .select._opened {

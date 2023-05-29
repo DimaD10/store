@@ -665,12 +665,27 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   color: #4F4F4F;
 }
 
+select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  border: 1px solid #E0E0E0;
+  height: 50px;
+}
+
 .select {
   position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* Gray 3 */
+  color: #828282;
 }
 .select__header {
   display: -webkit-box;
@@ -739,6 +754,17 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   cursor: pointer;
   padding: 12px 20px;
   text-align: center;
+}
+.select option {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* Gray 3 */
+  color: #828282;
+}
+.select option:disabled {
+  color: #ccc;
 }
 
 .select._opened {
@@ -1229,7 +1255,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
 .cab-nav__el_current .cab-nav__title {
   color: #FF9000;
 }
-.cab-nav div {
+.cab-nav div, .cab-nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1246,13 +1272,13 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   cursor: pointer;
 }
 @media (max-width: 991.98px) {
-  .cab-nav div {
+  .cab-nav div, .cab-nav a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
-.cab-nav div:hover .cab-nav__title {
+.cab-nav div:hover .cab-nav__title, .cab-nav a:hover .cab-nav__title {
   color: #FF9000;
 }
 .cab-nav__title {
@@ -1282,6 +1308,7 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
     text-align: center;
   }
 }
+
 .content-section, .edit-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1290,15 +1317,10 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  pointer-events: none;
 }
 .content-section_showed {
   position: static;
@@ -1395,6 +1417,16 @@ input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner
   color: #0A0A0A;
 }
 
+.edit-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  pointer-events: all;
+  position: static;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
 .edit-section_showed {
   position: static;
   opacity: 1;

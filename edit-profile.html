@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/cabinet.css">
 </head>
 <body>
     <div class="wrapper">
@@ -71,106 +70,30 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__category category">
-                <div class="category__container-small">
-                    <div class="category__wrapper">
-                        <h1 class="category__title">Категории</h1>
-                    </div>
-                </div>
-            </section>
-
-            <section class="main__categories categories">
-                <div class="categories__container-small ">
-                    <div class="categories__list">
-                        <a href="catalog.html" class="category-card" title="Футболки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
+            <section class="main__cabinet cabinet">
+                <div class="cabinet__container-small">
+                    <div class="cabinet__wrapper">
+                            <div class="cabinet__content" style="margin: 0 auto; max-width: 465px; width: 100%;">
+                                <div class="edit-section" style="width: 100%">
+                                    <div class="edit-section__header" style="justify-content: center;">
+                                        <h2 class="edit-section__title" style="text-align: center; margin: 0;">Редактировать профиль</h2>
+                                    </div>
+                                    <div class="edit-section__body">
+                                        <form class="form" style="width: 100%;">
+                                            <input type="text" class="form__input" placeholder="Имя">
+                                            <input type="text" class="form__input" placeholder="Никнейм">
+                                            <input type="email" class="form__input" placeholder="Почта">
+                                            <input type="text" class="form__input" placeholder="Номер телефона">
+        
+                                            <div class="form__buttons">
+                                                <button class="form__button button-stroke" onclick="preventFormSubmit(event)" data-form="close-edit">Отменить</button>
+                                                <button class="form__button button-filled" data-form="close-edit">Сохранить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Худи">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Куртки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Обувь">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Штаны">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Футболки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img1.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Футболки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Худи">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img2.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Худи</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Куртки">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img3.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Куртки</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Обувь">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img4.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Обувь</h3>
-                            </div>
-                        </a>
-
-                        <a href="catalog.html" class="category-card" title="Штаны">
-                            <div class="category-card__preview">
-                                <img src="./img/categories/img5.png" alt="">
-                            </div>
-                            <div class="category-card__label">
-                                <h3 class="category-card__title">Штаны</h3>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>
