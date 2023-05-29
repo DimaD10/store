@@ -120,7 +120,7 @@
             }
         }
         .cab-nav {
-            div {
+            div, a {
                 &:hover {
                     .cab-nav__title {
                         color: $blue;

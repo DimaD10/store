@@ -1248,7 +1248,7 @@ select {
 .cabinet_admin .cab-nav__el_current .cab-nav__title {
   color: #00A3FF;
 }
-.cabinet_admin .cab-nav div:hover .cab-nav__title {
+.cabinet_admin .cab-nav div:hover .cab-nav__title, .cabinet_admin .cab-nav a:hover .cab-nav__title {
   color: #00A3FF;
 }
 
